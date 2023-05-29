@@ -1,40 +1,135 @@
-
-
-
 /* config global */
 * {
     box-sizing: border-box;
-    margin:0;
+    margin: 0;
     padding: 0;
+    text-decoration: none;
+    list-style: none;
 }
-
-  *, *:before, *:after {
-    box-sizing: inherit;
+/* Familia tipográfica */
+@font-face {
+    font-family: sans-serif, 'Poppins-Light';
+    src: url(../assets/Poppins/Poppins-Light.ttf);
+    font-weight: 300;
 }
-
-
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url(../assets/Poppins/Poppins-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url(../assets/Poppins/Poppins-Bold.ttf);
+    font-weight: 600;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: sans-serif, 'Poppins-Bold';
+}
+h1 {
+    font-size: 2em;
+    text-transform: uppercase;
+}
+p {
+    font-family: sans-serif, 'Poppins-Regular';
+}
 /* menú de navegación */
-.cabecera{
+.cabecera {
     background-color: #000000;
-    padding:25px 80px 25px 80px;
+    padding: 25px 80px 25px 80px;
 }
-
-nav img{
-    width:100px;
+nav img {
+    width: 100px;
 }
-
-nav ul{
+nav ul {
     float: right;
 }
-
-nav ul li{
+nav ul li {
     list-style: none;
-    display: inline-block; 
+    display: inline-block;
     line-height: 80px;
     margin: 0 16px 0 16px;
-
 }
-nav ul li a{
-    color:azure;
+nav ul li a {
+    color: azure;
     text-decoration: none;
+    font-family: sans-serif, 'Poppins-Regular';
+}
+/* Sección del banner principal */
+.banner {
+    background-image: url(../assets/img/banner2.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    width: auto;
+    display: flex;
+    align-items: center;
+    padding: 0 4%;
+}
+.banner h1 {
+    max-width: 25vw;
+    padding-top: 45%;
+}
+/* productos */
+.productos {
+    padding: 15vh 4%;
+}
+.productos h2 {
+    text-align: center;
+}
+.row {
+    padding: 5vh 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.producto {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 1px solid #dbdbdb;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.info-producto {
+    padding: 1em 1em;
+    display: flex;
+    flex-direction: column;
+}
+.info-producto a {
+    align-self: flex-end;
+}
+.info-producto a button {
+    background-color: gold;
+    color: black;
+    border-radius: 2.5em;
+    border: none;
+    padding: 0.6em 1em;
+    margin-top: 1em;
+    font-size: 1em;
+}
+
+.contenedor-flex{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.imgpro{
+    width: 100%;
+}
+
+/* Nosotros */
+.nosotros {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 15vh 4%;
+    background-color: aqua;
+}
+footer {
+    padding: 10vh 4%;
+    display: flex;
+    justify-content: center;
 }
