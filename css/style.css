@@ -13,12 +13,12 @@
     font-weight: 300;
 }
 @font-face {
-    font-family: 'Poppins-Regular';
+    font-family: sans-serif,'Poppins-Regular';
     src: url(../assets/Poppins/Poppins-Regular.ttf);
     font-weight: 400;
 }
 @font-face {
-    font-family: 'Poppins-Bold';
+    font-family: sans-serif,'Poppins-Bold';
     src: url(../assets/Poppins/Poppins-Bold.ttf);
     font-weight: 600;
 }
@@ -29,25 +29,38 @@ h1 {
     font-size: 2em;
     text-transform: uppercase;
 }
+
+
+
+
 p {
     font-family: sans-serif, 'Poppins-Regular';
 }
 /* menú de navegación */
 .cabecera {
     background-color: #000000;
-    padding: 25px 80px 25px 80px;
+    padding: 25px 80px;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 nav img {
     width: 100px;
 }
 nav ul {
-    float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
 }
 nav ul li {
     list-style: none;
+    text-align: end;
     display: inline-block;
     line-height: 80px;
-    margin: 0 16px 0 16px;
+    margin: 0 16px;
 }
 nav ul li a {
     color: azure;
@@ -68,15 +81,28 @@ nav ul li a {
 }
 .banner h1 {
     max-width: 25vw;
-    padding-top: 45%;
+    padding-top: 15vh;
 }
-/* productos */
+
+.banner button{
+    padding: 12px 24px;
+    background-color: gold;
+    border: none;
+    border-radius: 24px;
+    margin-top: 1em;
+}
+
+
+/* grilla de productos con flexbox */
+
+
 .productos {
     padding: 15vh 4%;
 }
 .productos h2 {
-    text-align: center;
+    text-align: start;
 }
+
 .row {
     padding: 5vh 0;
     display: flex;
@@ -110,14 +136,36 @@ nav ul li a {
     font-size: 1em;
 }
 
-.contenedor-flex{
-    display: flex;
-    flex-direction: column;
+
+/* producto con grilla */
+.grilla{
+    background-color: aquamarine;
 }
 
-.imgpro{
+.contenedor-flex {
+    display: flex;
+    flex-direction: column; 
+    margin: 3em 0;
+}
+.contenedor-flex a{
+    align-self: flex-end;   
+}
+
+.contenedor-flex button{
+    background-color: gold;
+    color: black;
+    border-radius: 2.5em;
+    border: none;
+    padding: 0.6em 1em;
+    margin-top: 1em;
+    font-size: 1em;
+}
+
+.imgpro {
     width: 100%;
 }
+
+
 /* Nosotros */
 .nosotros {
     display: flex;
