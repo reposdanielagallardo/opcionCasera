@@ -92,7 +92,6 @@ nav ul li a {
     border-radius: 1em;
     overflow: hidden;
 }
-
 .info-producto {
     padding: 1em 1em;
     display: flex;
@@ -119,7 +118,6 @@ nav ul li a {
 .imgpro{
     width: 100%;
 }
-
 /* Nosotros */
 .nosotros {
     display: flex;
